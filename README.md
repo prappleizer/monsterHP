@@ -56,7 +56,9 @@ launcher = Launcher()
 launcher.launch()
 ```
 This should spawn a MPL window that is the GUI interface for monsterHP. There are 3 text entry fields at the top, which allow you to enter a monster name, HP, an AC. This can be added to your encounter with the plus-symbol box next to the text entry fields, and the monster just entered should appear below. 
+
 <img src="https://github.com/prappleizer/monsterHP/blob/master/img/launcher.png" width="250">
+
 At the bottom of the window, there is also a text entry field to load a csv file containing your monsters, of the form 
 ```
 monster_name,HP,AC
