@@ -11,11 +11,41 @@ Instead, it allows you to see health bars for each creature, and subtract off da
 by simply typing in the damage and hitting enter. I've found that in the middle of battle, that's all
 I really need, and this allows me to keep combat moving quickly. 
 
+This software requires a little bit of UNIX/Python knowledge, but I've tried to make it step-by-step followable to install and use, even if you do not have prior experience. 
+
+## Installation
+To use monsterHP, you'll need to have python, matplotlib, and numpy installed. 
+Most computers have a distribution of python installed. If you do not have the other two packages, they can be installed via 
+```
+pip install numpy
+```
+and 
+```
+pip install matplotlib
+```
+There are other ways to install these more carefully (including via an Anaconda distribution of Python), but if you don't already have that it's likely not necessary. 
+
+To install monsterHP, first clone this repo to some location on your computer via 
+```
+git clone https://github.com/prappleizer/monsterHP.git
+cd monsterHP/
+```
+and enter into that folder. Next, install the package by either running 
+```
+pip install . 
+```
+or 
+```
+python setup.py install
+```
+If this is successful, you should be able to import this package from any directory on your computer where you have a python/ipython window open.
+
+
 ## Usage 
 
 There are three ways to set up and run an encounter using monsterHP. 
 
-The first is through the GUI, which allows for the manual entry of monsters or the loading of a `.csv` file containing a list of monsters with their HP and AC. To launch this GUI, begin by starting a python/ipython session and importing the following from monsterHP:
+The first two are through the GUI, which allows for the manual entry of monsters or the loading of a `.csv` file containing a list of monsters with their HP and AC. To launch this GUI, begin by starting a python/ipython session and importing the following from monsterHP:
 
 ```
 from monsterHP.monsterHP import Launcher
