@@ -56,7 +56,7 @@ launcher = Launcher()
 launcher.launch()
 ```
 This should spawn a MPL window that is the GUI interface for monsterHP. There are 3 text entry fields at the top, which allow you to enter a monster name, HP, an AC. This can be added to your encounter with the plus-symbol box next to the text entry fields, and the monster just entered should appear below. 
-![alt text](https://github.com/prappleizer/monsterHP/img/launcher.png "Launcher Window")
+![Image of Launcher](https://github.com/prappleizer/monsterHP/blob/master/img/launcher.png)
 At the bottom of the window, there is also a text entry field to load a csv file containing your monsters, of the form 
 ```
 monster_name,HP,AC
@@ -67,7 +67,7 @@ monster_name,HP,AC
 If you type a file name that is in the **same directory** as you ran monsterHP, it should be able to load this file and text should appear saying the file was loaded correctly. There is some rudimentary error handling in this load function (namely, IOError if file not present, and parsing error if, e.g., the file does not contain only comma-separated values of 3 in each row). Other issues with your data files might not (yet) be caught. 
 
 Once you have set up your monster list (either through manual entry or loading a file), hit the GO button. The entry window will close, and another window will open which contains the encounter. You should see horizontal health bars for each of your monsters, with the monster name and AC listed within each for reference. At the bottom, you'll see a text entry box for each monster. You can now begin adjusting the HP of your monsters by entering a number and hitting enter. Entering something that cannot be evaluated as a number will have no effect. Negative numbers correspond to adding health. When a monster gets down to 10% of its initial health, its bar turns red. 
-![alt text](https://github.com/prappleizer/monsterHP/img/encounter.png "Encounter Window")
+![Image of Encounter](https://github.com/prappleizer/monsterHP/blob/master/img/encounter.png)
 
 
 The other way to run an encounter is to skip the launcher and set up your monsters interactively in the following way: 
