@@ -134,14 +134,15 @@ class Encounter():
 		if N_monsters < 8:
 			#can fit 5 across 
 			self.ax = plt.axes([left,bottom,0.98-left,0.9-bottom]) # 0.2 works well for this case. 
-			left_edges = np.linspace(0.02,0.98-0.08-0.5,N_monsters)
+			left_edges = np.linspace(0.02,0.98-0.08,N_monsters)
+			print(left_edges)
 			all_axes = [[i,0.01,0.08,0.075] for i in left_edges]
 		else: 
 			bottom=0.33
 			self.ax = plt.axes([left,bottom,0.98-left,0.9-bottom]) # 0.4 works well for this case. 
-			left_edges1 = np.linspace(0.02,0.98-0.08-0.5,8)
+			left_edges1 = np.linspace(0.02,0.98-0.08,8)
 			all_axes1 = [[i,0.15,0.08,0.075] for i in left_edges1]
-			left_edges2 = np.linspace(0.02,0.98-0.08-0.5,N_monsters-8)
+			left_edges2 = np.linspace(0.02,0.98-0.08,N_monsters-8)
 			all_axes2 = [[i,0.01,0.08,0.075] for i in left_edges2]
 			all_axes = all_axes1 + all_axes2
 		global bars 
